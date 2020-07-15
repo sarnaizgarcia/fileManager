@@ -1,0 +1,17 @@
+<ng-content></ng-content>
+<label for="file-upload" class="custom-file-upload">
+    Custom upload
+</label>
+<input 
+    id ="file-upload"
+    type="file" 
+    accept=".doc,.docx,.jpg" 
+    title="Choose file" 
+    (click)="onClick()" 
+    (keyup)="onEnter($event)"
+>
+
+<!-- <label for="file-upload" class="custom-file-upload">
+    Custom Upload
+</label>
+<input id="file-upload" type="file"/> -->

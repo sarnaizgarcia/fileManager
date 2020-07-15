@@ -22,21 +22,21 @@ export class ButtonComponent {
     public disable: boolean = false;
 
     @Output()
-    public buttonEvent: EventEmitter<void> = new EventEmitter<void> ()
+    public buttonEvent: EventEmitter<void> = new EventEmitter<void> ();
 
     private emitButtonEvent() {
         if (!this.disable) {
-            this.buttonEvent.emit()
+            this.buttonEvent.emit();
         }
     }
 
     public onClick() {
-        this.emitButtonEvent()
+        this.emitButtonEvent();
     }
 
     public onEnter(event) {
         if (event.key === 'ENTER') {
-            this.emitButtonEvent()
+            this.emitButtonEvent();
         }
     }
 }
