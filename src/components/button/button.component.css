@@ -2,6 +2,7 @@
     border: solid 1px black;
     border-radius: 4px;
     cursor: pointer;
+    width: fit-content;
 }
 
 .button:hover {
@@ -17,13 +18,15 @@
 }
 
 .button.small {
-    width: 50px;
+    max-width: 80px;
+    min-width: 50px;
     height: 30px;
     font-size: var(--font-size-small);
 }
 
 .button.big {
-    width: 80px;
+    max-width: 150px;
+    min-width: 80px;
     height: 60px;
     font-size: var(--font-size-normal);
 }
@@ -34,6 +37,10 @@
     font-weight: var(--font-weight-normal);
 }
 
+.button.primary:focus {
+    transform: solid 10px var(--secondary-color);
+}
+
 .button.primary.disable {
     background-color: var(--primary-color-dark);
 }
@@ -42,6 +49,10 @@
     background-color: var(--secondary-color);
     color: var(--font-color-on-secondary);
     font-weight: var(--font-weight-normal);
+}
+
+.button.secondary:focus {
+    transform: solid 10px var(--primary-color);
 }
 
 .button.secondary.disable {

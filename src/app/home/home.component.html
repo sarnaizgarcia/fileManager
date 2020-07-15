@@ -1,7 +1,15 @@
 <fmg-button (buttonEvent)="onEvent()">Por defecto</fmg-button><br/><br/>
 
-<fmg-button (buttonEvent)="onEvent()" [color]="'secondary'">Por defecto</fmg-button><br/><br/>
+<fmg-button (buttonEvent)="onEvent()" [color]="'secondary'">Big secondary</fmg-button><br/><br/>
+
+<fmg-button (buttonEvent)="onEvent()" [color]="'secondary'" [disable]="true">Big secondary</fmg-button><br/><br/>
+
+<fmg-button (buttonEvent)="onEvent()" [disable]="true">Disabled</fmg-button><br><br>
 
 <fmg-button [size]="'small'" (buttonEvent)="onEvent()">Small</fmg-button><br/><br/>
 
-<fmg-button [size]="'small'" (buttonEvent)="onEvent()" [disable]="true">Small</fmg-button>
+<fmg-button [size]="'small'" (buttonEvent)="onEvent()" [disable]="true">Disabled</fmg-button><br/><br/>
+
+<fmg-button [size]="'small'" [color]="'secondary'" (buttonEvent)="onEvent()">Secondary</fmg-button><br><br>
+
+<fmg-button [size]="'small'" [color]="'secondary'" [disable]="true" (buttonEvent)="onEvent()">Secondary</fmg-button><br><br>
