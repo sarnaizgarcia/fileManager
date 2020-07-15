@@ -1,1 +1,7 @@
-<h1>Esto va a ser la vista home</h1>
+<fmg-button (buttonEvent)="onEvent()">Por defecto</fmg-button><br/><br/>
+
+<fmg-button (buttonEvent)="onEvent()" [color]="'secondary'">Por defecto</fmg-button><br/><br/>
+
+<fmg-button [size]="'small'" (buttonEvent)="onEvent()">Small</fmg-button><br/><br/>
+
+<fmg-button [size]="'small'" (buttonEvent)="onEvent()" [disable]="true">Small</fmg-button>

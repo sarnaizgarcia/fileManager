@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class HomeComponent {
+    public onEvent() {
+        console.log('Se ha pulsado el boton')
+    }
 }

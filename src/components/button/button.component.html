@@ -1,0 +1,7 @@
+<button
+    class="button {{size}} {{color}}"
+    [ngClass]="{'disable': disable}"
+    type="{{type}}"
+    (click)="onClick()"
+    (keyup)="onEnter($event)"
+><ng-content></ng-content></button>
