@@ -1,17 +1,61 @@
 input[type="file"] {
-    display: none;
+  display: none;
 }
 
 .custom-file-upload {
-    border: 1px solid black;
-    border-radius: 4px;
-    display: inline-block;
-    padding: 6px 12px;
-    cursor: pointer;
-    background-color: var(--primary-color);
-    color: var(--font-color-on-primary)
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  width: fit-content;
 }
 
-.custom-file-upload:focus {
-    transform: solid 30px var(--secondary-color);
+.custom-file-upload:hover {
+  transform: scale(1.2);
+}
+
+.custom-file-upload.small {
+  max-width: 80px;
+  min-width: 50px;
+  height: 30px;
+  font-size: var(--font-size-small);
+}
+
+.custom-file-upload.big {
+  max-width: 150px;
+  min-width: 80px;
+  height: 60px;
+  font-size: var(--font-size-normal);
+}
+
+.custom-file-upload.primary {
+  background-color: var(--primary-color);
+  color: var(--font-color-on-primary);
+  font-weight: var(--font-weight-normal);
+}
+
+.custom-file-upload.primary:focus {
+  background: var(--primary-color-dark);
+}
+
+.custom-file-upload.secondary {
+  background-color: var(--secondary-color);
+  color: var(--font-color-on-secondary);
+  font-weight: var(--font-weight-normal);
+}
+
+.custom-file-upload.secondary:focus {
+  background: var(--secondary-color-dark);
+}
+
+.fmg-file-upload {
+  display: flex;
+  flex-direction: row;
+}
+
+.fmg-file-upload > div {
+  padding: 20px;
+}
+
+.file-path {
 }

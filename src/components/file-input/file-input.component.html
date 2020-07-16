@@ -1,19 +1,28 @@
 <div class="fmg-file-upload">
-  <label
-    for="file-upload"
-    class="custom-file-upload {{ size }} {{ color }}"
-    tabindex="0"
-    (keyup)="selectFile($event)"
-  >
-    <ng-content></ng-content>
-  </label>
-  <input
-    #inputField
-    id="file-upload"
-    type="file"
-    accept=".doc,.docx,.jpg"
-    title="Choose file"
-    (input)="takeFile($event)"
-  />
-  <input type="text" class="file-path" [(ngModel)]="file" disabled />
+  <div>
+    <label
+      for="file-upload"
+      class="custom-file-upload {{ size }} {{ color }}"
+      tabindex="0"
+      (keyup)="selectFile($event)"
+    >
+      <ng-content></ng-content>
+    </label>
+    <input
+      #inputField
+      id="file-upload"
+      type="file"
+      accept=".doc,.docx,.jpg"
+      title="Choose file"
+      (input)="takeFile($event)"
+    />
+  </div>
+  <div>
+    <input
+      type="text"
+      class="file-path {{ size }}"
+      [(ngModel)]="file"
+      disabled
+    />
+  </div>
 </div>

@@ -30,6 +30,18 @@
   >Secondary</fmg-button
 ><br /><br />
 
-<fmg-file-input>
-  Custom upload
-</fmg-file-input>
+<fmg-file-input [color]="'primary'" (fileChange)="onEvent()">
+  Custom upload </fmg-file-input
+><br /><br />
+
+<fmg-file-input [size]="'big'" (fileChange)="onEvent()">
+  Custom upload </fmg-file-input
+><br /><br />
+
+<fmg-file-input [color]="'secondary'" (fileChange)="onEvent()">
+  Custom upload </fmg-file-input
+><br /><br />
+
+<fmg-file-input [size]="'big'" [color]="'secondary'" (fileChange)="onEvent()">
+  Custom upload </fmg-file-input
+><br /><br />

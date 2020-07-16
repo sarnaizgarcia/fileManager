@@ -23,8 +23,8 @@ export class FileInputComponent {
   @Input()
   public color: Color = Color.PRIMARY;
 
-  @Input()
-  public disable: boolean = false;
+  //   @Input()
+  //   public disable: boolean = false;
 
   @ViewChild('inputField')
   public inputFile: ElementRef;
