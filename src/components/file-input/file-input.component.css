@@ -54,7 +54,7 @@ input[type="file"] {
 }
 
 .fmg-file-upload > div {
-  padding: 20px;
+  padding-right: 20px;
 }
 
 .file-path {
