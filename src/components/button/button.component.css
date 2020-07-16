@@ -1,61 +1,62 @@
 .button {
-    border: solid 1px black;
-    border-radius: 4px;
-    cursor: pointer;
-    width: fit-content;
+  border: solid 1px black;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
 }
 
 .button:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .button.disable {
-    cursor: no-drop;
+  cursor: no-drop;
 }
 
 .button.button.disable:hover {
-    transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 .button.small {
-    max-width: 80px;
-    min-width: 50px;
-    height: 30px;
-    font-size: var(--font-size-small);
+  max-width: 80px;
+  min-width: 50px;
+  height: 30px;
+  font-size: var(--font-size-small);
 }
 
 .button.big {
-    max-width: 150px;
-    min-width: 80px;
-    height: 60px;
-    font-size: var(--font-size-normal);
+  max-width: 150px;
+  min-width: 80px;
+  height: 60px;
+  font-size: var(--font-size-normal);
 }
 
 .button.primary {
-    background-color: var(--primary-color);
-    color: var(--font-color-on-primary);
-    font-weight: var(--font-weight-normal);
+  background-color: var(--primary-color);
+  color: var(--font-color-on-primary);
+  font-weight: var(--font-weight-normal);
 }
 
 .button.primary:focus {
-    transform: solid 10px var(--secondary-color);
+  /* transform: solid var(--secondary-color); */
+  background: var(--primary-color-dark);
 }
 
 .button.primary.disable {
-    background-color: var(--primary-color-dark);
+  background-color: var(--primary-color-dark);
 }
 
 .button.secondary {
-    background-color: var(--secondary-color);
-    color: var(--font-color-on-secondary);
-    font-weight: var(--font-weight-normal);
+  background-color: var(--secondary-color);
+  color: var(--font-color-on-secondary);
+  font-weight: var(--font-weight-normal);
 }
 
 .button.secondary:focus {
-    transform: solid 10px var(--primary-color);
+  /* transform: solid var(--primary-color); */
+  background: var(--secondary-color-dark);
 }
 
 .button.secondary.disable {
-    background-color: var(--secondary-color-dark);
+  background-color: var(--secondary-color-dark);
 }
-

@@ -3,40 +3,39 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Sizes, Types, Color } from './button-types';
 
 @Component({
-    selector: 'fmg-button',
-    templateUrl: 'button.component.html',
-    styleUrls: ['button.component.css']
+  selector: 'fmg-button',
+  templateUrl: 'button.component.html',
+  styleUrls: ['button.component.css'],
 })
-
 export class ButtonComponent {
-    @Input()
-    public size: Sizes = Sizes.BIG;
-    
-    @Input()
-    public type: Types = Types.BUTTON;
+  @Input()
+  public size: Sizes = Sizes.BIG;
 
-    @Input()
-    public color: Color = Color.PRIMARY;
+  @Input()
+  public type: Types = Types.BUTTON;
 
-    @Input()
-    public disable: boolean = false;
+  @Input()
+  public color: Color = Color.PRIMARY;
 
-    @Output()
-    public buttonEvent: EventEmitter<void> = new EventEmitter<void> ();
+  @Input()
+  public disable: boolean = false;
 
-    private emitButtonEvent() {
-        if (!this.disable) {
-            this.buttonEvent.emit();
-        }
+  @Output()
+  public buttonEvent: EventEmitter<void> = new EventEmitter<void>();
+
+  private emitButtonEvent() {
+    if (!this.disable) {
+      this.buttonEvent.emit();
     }
+  }
 
-    public onClick() {
-        this.emitButtonEvent();
-    }
+  public onClick() {
+    this.emitButtonEvent();
+  }
 
-    public onEnter(event) {
-        if (event.key === 'ENTER') {
-            this.emitButtonEvent();
-        }
+  public onEnter(event) {
+    if (event.key === 'ENTER') {
+      this.emitButtonEvent();
     }
+  }
 }
