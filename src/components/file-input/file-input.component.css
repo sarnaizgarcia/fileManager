@@ -51,11 +51,26 @@ input[type="file"] {
 .fmg-file-upload {
   display: flex;
   flex-direction: row;
-}
-
-.fmg-file-upload > div {
-  padding-right: 20px;
+  align-items: center;
 }
 
 .file-path {
+  margin-left: 20px;
+  width: 100%;
+
+  /* height and width link to the button size */
 }
+
+.file-path.big {
+  height: 70px;
+  font-size: var(--font-size-big);
+}
+
+.file-path.small {
+  height: 40px;
+  font-size: var(--font-size-small);
+}
+
+/* disabled
+hover
+focus */
