@@ -4,8 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { ButtonComponent } from './button';
 import { FileInputComponent } from './file-input';
+import { TextAreaComponent } from './text-area';
 
-const components = [ButtonComponent, FileInputComponent];
+const components = [ButtonComponent, FileInputComponent, TextAreaComponent];
 
 @NgModule({
   imports: [CommonModule, FormsModule],
